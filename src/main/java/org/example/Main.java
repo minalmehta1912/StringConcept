@@ -118,35 +118,35 @@ public class Main
 
         //String Builder
         //String Builder Constructor
-        StringBuilder sbr1=new StringBuilder();//It creates an empty String buffer with the initial capacity of 16.
+        StringBuilder sbr1=new StringBuilder();//It creates an empty String builder with the initial capacity of 16.
         System.out.println(sbr1.capacity());//16
 
-        StringBuilder sbr2=new StringBuilder(1000);//it creates an empty String buffer with the specified capacity as length.
+        StringBuilder sbr2=new StringBuilder(1000);//it creates an empty String builder with the specified capacity as length.
         System.out.println(sbr2.capacity());//1000
 
-        StringBuilder sbr3=new StringBuilder("Mishti");// It creates a String buffer with the specified string..
+        StringBuilder sbr3=new StringBuilder("Dhyaan");// It creates a String builder with the specified string..
         System.out.println(sbr3.capacity());//String_length+16=22
         System.out.println(sbr3.length());//6
 
-        System.out.println(sbr3.append("Mehta"));//MishtiMehta
-        System.out.println(sbr3.append(24));//MishtiMehta24
-        System.out.println(sbr3.append(5.5));//MishtiMehta245.5
-        System.out.println(sbr3.append('G'));//MishtiMehta245.5G
+        System.out.println(sbr3.append("Mehta"));//DhyaanMehta
+        System.out.println(sbr3.append(24));//DhyaanMehta24
+        System.out.println(sbr3.append(5.5));//DhyaanMehta245.5
+        System.out.println(sbr3.append('G'));//DhyaanMehta245.5G
 
-        System.out.println(sbr3.charAt(0));//M
-        sbr3.setCharAt(0,'G');//GishtiMehta245.5G
+        System.out.println(sbr3.charAt(0));//D
+        sbr3.setCharAt(0,'G');//GhyaanMehta245.5G
         System.out.println(sb3);
 
-        System.out.println(sbr3.insert(0,"Kumari "));//String---Kumari GishtiMehta245.5G
-        System.out.println(sbr3.insert(6,2019));//int-----Kumari2019 GishtiMehta245.5G
-        System.out.println(sbr3.insert(0,true));//boolean------trueKumari2019 GishtiMehta245.5G
-        System.out.println(sbr3.insert(0,2.2));//float----------2.2Kumari2019 GishtiMehta245.5G
-        System.out.println(sbr3.insert(0,'X'));//char----------X2.2Kumari2019 GishtiMehta245.5G
+        System.out.println(sbr3.insert(0,"Kumar "));//String---Kumar GhyaanMehta245.5G
+        System.out.println(sbr3.insert(6,2019));//int-----Kumar 2019GhyaanMehta245.5G
+        System.out.println(sbr3.insert(0,true));//boolean------trueKumar 2019 GhyaanMehta245.5G
+        System.out.println(sbr3.insert(0,2.2));//float----------2.2Kumar 2019 GhyaanMehta245.5G
+        System.out.println(sbr3.insert(0,'X'));//char----------X2.2Kumar 2019 GhyaanMehta245.5G
 
-        System.out.println(sbr3.delete(2,5));//X2rueKumari2019 GishtiMehta245.5G
-        System.out.println(sbr3.deleteCharAt(1));//XrueKumari2019 GishtiMehta245.5G
+        System.out.println(sbr3.delete(2,5));//X2rueKumar 2019 GhyaanMehta245.5G
+        System.out.println(sbr3.deleteCharAt(1));//XrueKumar 2019 GhyaanMehta245.5G
 
-        System.out.println(sbr3.reverse());//G5.542atheMithsiG 9102iramuKeurX
+        System.out.println(sbr3.reverse());//G5.542atheMnaayhG9102 ramuKeurX
 
         sbr2.append("Programming");
         System.out.println(sbr2.capacity());//1000
