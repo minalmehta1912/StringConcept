@@ -160,8 +160,8 @@ public class Main
         System.out.println(sbr2.length());//7
 
 
-        sbr2.ensureCapacity(20);
-        System.out.println(sbr2.capacity());//24
+        sbr2.ensureCapacity(50);
+        System.out.println(sbr2.capacity());//50
 
 
 
