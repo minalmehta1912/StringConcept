@@ -67,5 +67,144 @@ public class Main
         s="   minal  ";
         System.out.println(s.trim());//remove blank space from right n left
 
+        //String Buffer
+        //String Buffer Constructor
+        StringBuffer sb1=new StringBuffer();//It creates an empty String buffer with the initial capacity of 16.
+        System.out.println(sb1.capacity());//16
+
+        StringBuffer sb2=new StringBuffer(1000);//it creates an empty String buffer with the specified capacity as length.
+        System.out.println(sb2.capacity());//1000
+
+        StringBuffer sb3=new StringBuffer("Mishti");// It creates a String buffer with the specified string..
+        System.out.println(sb3.capacity());//String_length+16=22
+        System.out.println(sb3.length());//6
+
+        System.out.println(sb3.append("Mehta"));//MishtiMehta
+        System.out.println(sb3.append(24));//MishtiMehta24
+        System.out.println(sb3.append(5.5));//MishtiMehta245.5
+        System.out.println(sb3.append('G'));//MishtiMehta245.5G
+
+        System.out.println(sb3.charAt(0));//M
+        sb3.setCharAt(0,'G');//GishtiMehta245.5G
+        System.out.println(sb3);
+
+        System.out.println(sb3.insert(0,"Kumari "));//String---Kumari GishtiMehta245.5G
+        System.out.println(sb3.insert(6,2019));//int-----Kumari2019 GishtiMehta245.5G
+        System.out.println(sb3.insert(0,true));//boolean------trueKumari2019 GishtiMehta245.5G
+        System.out.println(sb3.insert(0,2.2));//float----------2.2Kumari2019 GishtiMehta245.5G
+        System.out.println(sb3.insert(0,'X'));//char----------X2.2Kumari2019 GishtiMehta245.5G
+
+        System.out.println(sb3.delete(2,5));//X2rueKumari2019 GishtiMehta245.5G
+        System.out.println(sb3.deleteCharAt(1));//XrueKumari2019 GishtiMehta245.5G
+
+        System.out.println(sb3.reverse());//G5.542atheMithsiG 9102iramuKeurX
+
+        sb2.append("Programming");
+        System.out.println(sb2.capacity());//1000
+        sb2.trimToSize();
+        System.out.println(sb2.capacity());//11
+
+        sb2.setLength(7);
+        System.out.println(sb2);//program
+
+        System.out.println(sb2.capacity());//11
+        System.out.println(sb2.length());//7
+
+
+        sb2.ensureCapacity(20);
+        System.out.println(sb2.capacity());//24
+
+
+
+        //String Builder
+        //String Builder Constructor
+        StringBuilder sbr1=new StringBuilder();//It creates an empty String buffer with the initial capacity of 16.
+        System.out.println(sbr1.capacity());//16
+
+        StringBuilder sbr2=new StringBuilder(1000);//it creates an empty String buffer with the specified capacity as length.
+        System.out.println(sbr2.capacity());//1000
+
+        StringBuilder sbr3=new StringBuilder("Mishti");// It creates a String buffer with the specified string..
+        System.out.println(sbr3.capacity());//String_length+16=22
+        System.out.println(sbr3.length());//6
+
+        System.out.println(sbr3.append("Mehta"));//MishtiMehta
+        System.out.println(sbr3.append(24));//MishtiMehta24
+        System.out.println(sbr3.append(5.5));//MishtiMehta245.5
+        System.out.println(sbr3.append('G'));//MishtiMehta245.5G
+
+        System.out.println(sbr3.charAt(0));//M
+        sbr3.setCharAt(0,'G');//GishtiMehta245.5G
+        System.out.println(sb3);
+
+        System.out.println(sbr3.insert(0,"Kumari "));//String---Kumari GishtiMehta245.5G
+        System.out.println(sbr3.insert(6,2019));//int-----Kumari2019 GishtiMehta245.5G
+        System.out.println(sbr3.insert(0,true));//boolean------trueKumari2019 GishtiMehta245.5G
+        System.out.println(sbr3.insert(0,2.2));//float----------2.2Kumari2019 GishtiMehta245.5G
+        System.out.println(sbr3.insert(0,'X'));//char----------X2.2Kumari2019 GishtiMehta245.5G
+
+        System.out.println(sbr3.delete(2,5));//X2rueKumari2019 GishtiMehta245.5G
+        System.out.println(sbr3.deleteCharAt(1));//XrueKumari2019 GishtiMehta245.5G
+
+        System.out.println(sbr3.reverse());//G5.542atheMithsiG 9102iramuKeurX
+
+        sbr2.append("Programming");
+        System.out.println(sbr2.capacity());//1000
+        sbr2.trimToSize();
+        System.out.println(sbr2.capacity());//11
+
+        sbr2.setLength(7);
+        System.out.println(sbr2);//program
+
+        System.out.println(sbr2.capacity());//11
+        System.out.println(sbr2.length());//7
+
+
+        sbr2.ensureCapacity(20);
+        System.out.println(sbr2.capacity());//24
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        StringBuilder s_b=new StringBuilder();
+//        System.out.println(s_b.capacity());//16
+//        System.out.println(s_b.capacity());//16
+
+
+
+
+
+
+
+
+
     }
 }
